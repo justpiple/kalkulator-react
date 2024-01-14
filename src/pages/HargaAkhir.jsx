@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Alert, Button, Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Form, Row } from "react-bootstrap";
 
 export default function HargaAkhirCalculator() {
   const [input, setInput] = useState({
