@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Alert from "react-bootstrap/Alert";
 
 export default function CicilanBank() {
   const [input, setInput] = useState({
