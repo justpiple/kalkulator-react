@@ -15,12 +15,30 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/bmi-calculator" element={<BMICalculator />} />
-        <Route path="/cicilan-calculator" element={<CicilanBank />} />
-        <Route path="/ppn-diskon" element={<HargaAkhirCalculator />} />
-        <Route path="/konversi-biner" element={<BinaryConverter />} />
-        <Route path="/konversi-oktal" element={<OctalConverter />} />
-        <Route path="/konversi-desimal" element={<DecimalConverter />} />
+        <Route
+          path="/kalkulator-react/bmi-calculator"
+          element={<BMICalculator />}
+        />
+        <Route
+          path="/kalkulator-react/cicilan-calculator"
+          element={<CicilanBank />}
+        />
+        <Route
+          path="/kalkulator-react/ppn-diskon"
+          element={<HargaAkhirCalculator />}
+        />
+        <Route
+          path="/kalkulator-react/konversi-biner"
+          element={<BinaryConverter />}
+        />
+        <Route
+          path="/kalkulator-react/konversi-oktal"
+          element={<OctalConverter />}
+        />
+        <Route
+          path="/kalkulator-react/konversi-desimal"
+          element={<DecimalConverter />}
+        />
         <Route
           path="/konversi-heksadesimal"
           element={<HexadecimalConverter />}
