@@ -1,49 +1,50 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Nav } from "react-bootstrap";
 import "./App.css";
-import BMICalculator from "./pages/BMICalculator";
-import CicilanBank from "./pages/CicilanBank";
-import HargaAkhirCalculator from "./pages/HargaAkhir";
-import BinaryConverter from "./pages/KonversiBilanganBiner";
-import OctalConverter from "./pages/KonversiBilanganOktal";
-import DecimalConverter from "./pages/KonversiBilanganDesimal";
-import HexadecimalConverter from "./pages/KonversiBilanganHeksadesimal";
+import PageRouter from "./PageRouter";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
+  const path = window.location.pathname;
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/kalkulator-react/bmi-calculator"
-          element={<BMICalculator />}
-        />
-        <Route
-          path="/kalkulator-react/cicilan-calculator"
-          element={<CicilanBank />}
-        />
-        <Route
-          path="/kalkulator-react/ppn-diskon"
-          element={<HargaAkhirCalculator />}
-        />
-        <Route
-          path="/kalkulator-react/konversi-biner"
-          element={<BinaryConverter />}
-        />
-        <Route
-          path="/kalkulator-react/konversi-oktal"
-          element={<OctalConverter />}
-        />
-        <Route
-          path="/kalkulator-react/konversi-desimal"
-          element={<DecimalConverter />}
-        />
-        <Route
-          path="/konversi-heksadesimal"
-          element={<HexadecimalConverter />}
-        />
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <Nav variant="pills" activeKey={path} className="mx-auto navbar">
+        <Nav.Item>
+          <Nav.Link href="/kalkulator-react/bmi-calculator">
+            BMI Calculator
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/kalkulator-react/cicilan-calculator">
+            Cicilan Calculator
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/kalkulator-react/ppn-diskon">PPN Diskon</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/kalkulator-react/konversi-biner">
+            Konversi Biner
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/kalkulator-react/konversi-oktal">
+            Konversi Oktal
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/kalkulator-react/konversi-desimal">
+            Konversi Desimal
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/kalkulator-react/konversi-heksadesimal">
+            Konversi Heksadesimal
+          </Nav.Link>
+        </Nav.Item>
+      </Nav>
+      <PageRouter />
+    </div>
   );
 }
