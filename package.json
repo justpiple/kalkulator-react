@@ -1,8 +1,7 @@
 {
-  "name": "bmi-calculator",
+  "name": "kalkulator-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://justpiple.github.io/kalkulator-react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
