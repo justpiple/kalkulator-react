@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # kalkulator-react
 
-### by me and twiskow
+### created by me and [twiska](https://github.com/twiskanadila)

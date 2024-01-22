@@ -10,35 +10,35 @@ export default function App() {
   return (
     <div>
       <Nav variant="pills" activeKey={path} className="mx-auto navbar">
-        <Nav.Item>
+        <Nav.Item className="shadow-sm bg-body-tertiary rounded">
           <Nav.Link href="/kalkulator-react/bmi-calculator">
             BMI Calculator
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className="shadow-sm bg-body-tertiary rounded">
           <Nav.Link href="/kalkulator-react/cicilan-calculator">
             Cicilan Calculator
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className="shadow-sm bg-body-tertiary rounded">
           <Nav.Link href="/kalkulator-react/ppn-diskon">PPN Diskon</Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className="shadow-sm bg-body-tertiary rounded">
           <Nav.Link href="/kalkulator-react/konversi-biner">
             Konversi Biner
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className="shadow-sm bg-body-tertiary rounded">
           <Nav.Link href="/kalkulator-react/konversi-oktal">
             Konversi Oktal
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className="shadow-sm bg-body-tertiary rounded">
           <Nav.Link href="/kalkulator-react/konversi-desimal">
             Konversi Desimal
           </Nav.Link>
         </Nav.Item>
-        <Nav.Item>
+        <Nav.Item className="shadow-sm bg-body-tertiary rounded">
           <Nav.Link href="/kalkulator-react/konversi-heksadesimal">
             Konversi Heksadesimal
           </Nav.Link>

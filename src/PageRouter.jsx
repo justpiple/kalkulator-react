@@ -16,6 +16,10 @@ export default function PageRouter() {
     <BrowserRouter>
       <Routes>
         <Route
+          path="/kalkulator-react/"
+          element={<h1 className="text-center">React Calculator</h1>}
+        />
+        <Route
           path="/kalkulator-react/bmi-calculator"
           element={<BMICalculator />}
         />
